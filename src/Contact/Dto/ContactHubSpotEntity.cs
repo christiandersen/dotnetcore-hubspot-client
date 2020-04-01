@@ -32,6 +32,8 @@ namespace Skarp.HubSpotClient.Contact.Dto
         public string State { get; set; }
         [DataMember(Name = "zip")]
         public string ZipCode { get; set; }
+        [DataMember(Name = "country")]
+        public string Country { get; set; }
 
         public string RouteBasePath => "/contacts/v1";
         public bool IsNameValue => false;
